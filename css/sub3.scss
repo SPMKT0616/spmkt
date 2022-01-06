@@ -1,0 +1,122 @@
+$maincolor: #8dd437;
+$subcolor1: #f2922c; 
+$subcolor2: #464647;
+
+*{box-sizing: border-box;}
+
+@mixin clearfix{
+    display: block;
+    clear: both;
+    content: '';
+}
+@mixin cont{
+    width: $contwidth;
+    min-width: $contwidth;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+@mixin contpadding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+@mixin abs0{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@mixin aftersty{
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+h2{
+    position: relative;
+    margin: 20px 0;
+    &:after{
+        top: -15px;
+        width: 100px;
+        height: 2px;
+        background: black;
+        @include aftersty;
+    }
+}
+
+/* heading-background */
+.heading_bg{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    padding-top: 95px;
+    background: url(../img/jpg/how_to_work/architecture2.jpg) no-repeat;
+    background-position: center top;
+    background-size: cover;
+    strong{
+        display: block; 
+        position: relative;
+        z-index: 3;
+        top: 50%;
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        transform: translateY(-50%);
+        &:after{ display: none;}
+    }
+}
+
+/* sub03-section-01 */
+.sec01{
+    background: #343434;
+    .cont{
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    h2{
+        color: white; 
+        text-align: center;
+        &:after{ display: none;}}
+    .text_wrap{
+        text-align: center;
+        p{padding-top: 30px;}
+    }
+}
+
+/* sub03-section-02 */
+.sec02{
+    .cont{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    h2+p{ padding: 40px 0 60px 0;}
+    .client_co{ 
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    .thumbnail{
+        width: 200px;
+        height: 200px;
+        img:hover{
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+    }
+    .text_wrap{
+        width: 850px;
+        strong{ font-size: 1.2rem;}
+        p{ 
+            padding-top: 20px;
+            font-size: 1rem;
+        }
+    }
+}
+
+
+

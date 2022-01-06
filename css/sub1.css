@@ -1,0 +1,160 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h2 {
+  display: inline-block;
+  position: relative;
+  margin: 20px 0;
+}
+
+h2:after {
+  top: -15px;
+  width: 100px;
+  height: 2px;
+  background: black;
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+/* heading-background */
+.heading_bg {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+  height: 250px;
+  padding-top: 95px;
+  background: url(../img/jpg/about_us/building.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.heading_bg strong {
+  display: block;
+  position: relative;
+  z-index: 3;
+  top: 50%;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.heading_bg strong:after {
+  display: none;
+}
+
+/* sub01-section-01,02 */
+.sec01 .cont, .sec02 .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.sec01 .text_wrap, .sec02 .text_wrap {
+  width: 60%;
+  padding-right: 30px;
+}
+
+.sec01 .text_wrap p, .sec02 .text_wrap p {
+  padding-top: 30px;
+}
+
+.sec01 .img_wrap, .sec02 .img_wrap {
+  position: relative;
+  width: 40%;
+}
+
+.sec01 .img_wrap {
+  background: url(../img/jpg/about_us/business.jpg) no-repeat center;
+}
+
+.sec02 .img_wrap img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* sub01-section-03 */
+.sec03 {
+  min-width: 1200px;
+  background: #343436;
+}
+
+.sec03 .cont {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.sec03 h2 {
+  color: white;
+}
+
+.sec03 h2:after {
+  background: white;
+}
+
+.sec03 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+
+.sec03 .thumbnail {
+  width: 300px;
+  height: 300px;
+}
+
+.sec03 .thumbnail img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.sec03 .thumbnail + p {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* sub01-section-04 */
+.sec04 {
+  min-width: 1200px;
+  background: url(../img/jpg/about_us/architecture.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.sec04 .cont {
+  padding: 120px;
+  text-align: center;
+}
+
+.sec04 h2 {
+  color: white;
+}
+
+.sec04 h2:after {
+  display: none;
+}
+
+.sec04 .text_wrap {
+  margin-top: 50px;
+  background: white;
+}
+
+.sec04 .text_wrap p {
+  padding: 50px 0;
+  line-height: 2;
+}
+/*# sourceMappingURL=sub1.css.map */

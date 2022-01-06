@@ -1,0 +1,156 @@
+$maincolor: #8dd437;
+$subcolor1: #f2922c; 
+$subcolor2: #464647;
+
+*{box-sizing: border-box;}
+
+@mixin clearfix{
+    display: block;
+    clear: both;
+    content: '';
+}
+@mixin cont{
+    width: $contwidth;
+    min-width: $contwidth;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+@mixin contpadding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+@mixin abs0{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@mixin aftersty{
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+h2{
+    display: inline-block;
+    position: relative;
+    margin: 20px 0;
+    &:after{
+        top: -15px;
+        width: 100px;
+        height: 2px;
+        background: black;
+        @include aftersty;
+    }
+}
+
+/* heading-background */
+.heading_bg{
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    height: 250px;
+    padding-top: 95px;
+    background: url(../img/jpg/about_us/building.jpg) no-repeat;
+    background-position: center top;
+    background-size: cover;
+    strong{
+        display: block; 
+        position: relative;
+        z-index: 3;
+        top: 50%;
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        transform: translateY(-50%);
+        &:after{ display: none;}
+    }
+}
+
+/* sub01-section-01,02 */
+.sec01, .sec02{
+    .cont{
+        display: flex;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .text_wrap{
+        width: 60%;
+        padding-right: 30px;
+        p{ padding-top: 30px;}
+    }
+    .img_wrap{
+        position: relative;
+        width: 40%;
+    }
+}
+
+.sec01 .img_wrap{ background: url(../img/jpg/about_us/business.jpg) no-repeat center;}
+
+.sec02 .img_wrap{
+    img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    }
+}
+
+/* sub01-section-03 */
+.sec03{
+    min-width: 1200px;
+    background: #343436;
+    .cont{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    h2{ 
+        color: white;
+        &:after{
+            background: white;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    .thumbnail{
+        width: 300px;
+        height: 300px;
+        img:hover{
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+        +p{
+            padding-top: 20px;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+
+/* sub01-section-04 */
+.sec04{
+    min-width: 1200px;
+    background: url(../img/jpg/about_us/architecture.jpg) no-repeat center;
+    background-size: cover;
+    .cont{
+        padding: 120px;
+        text-align: center;
+    }
+    h2{ 
+        color: white;
+        &:after{ display: none;}
+    }
+    .text_wrap{
+        margin-top: 50px;
+        background: white;
+        p{
+            padding: 50px 0;
+            line-height: 2;
+        }
+    }
+}
+

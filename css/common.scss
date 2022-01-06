@@ -1,0 +1,136 @@
+$maincolor: #8dd437;  /* #f2922c */
+$subcolor1: #f2922c;
+$subcolor2: #3d3a37;
+$contwidth: 1200px;
+
+@mixin clearfix{
+    display: block;
+    clear: both;
+    content: '';
+}
+@mixin cont{
+    width: $contwidth;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+@mixin abs0{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@mixin aftersty{
+    display: block;
+    position: absolute;
+    content: "";
+}
+@mixin headertrans{
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300;500;700;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/*layout base */
+*{box-sizing: border-box;}
+
+#wrap > *:not(.support_SM){ min-width: $contwidth;}
+
+.cont{ @include cont}
+
+.wrapper:after{ @include clearfix;}
+
+.screen{
+    background: rgba(0,0,0,0.4);
+    @include abs0; 
+}
+
+.thumbnail{
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+h2{ 
+    font-size: 2.3rem;
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+
+p{ 
+    line-height: 1.7;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(38,38,38,0.8);
+    strong{ font-size: 1.2rem;
+        color: rgb(38,38,38);
+    }
+}
+
+/* header */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: transparent;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    @include headertrans;
+    .cont{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .logo img{
+        height: 65px;
+    }
+}
+
+nav{
+    li{
+        float: left;
+        margin-right: 20px;
+        &:first-child a{ color: $subcolor1;}
+        a{
+            display: block;
+            height: 65px; 
+            line-height: 65px;
+            color: white;
+            font-size: 1.1rem;
+            &:hover{ color: $maincolor;}
+        }
+    }
+}
+
+/* scroll down시 header */
+.down{
+    background-color:rgba(0,0,0,.8);
+    @include headertrans;
+    li a{
+        color: white;
+        &:hover{ color: $maincolor;}
+    }
+}
+
+/* footer */
+footer{
+    background: $subcolor2;
+    min-width: 1200px;
+    .cont{
+        padding-top:30px;
+        padding-bottom: 30px;
+        >p{padding-bottom: 25px;}
+    }
+    address{
+        p{margin-bottom: 10px;}
+    }
+    p{ color: white;}
+}

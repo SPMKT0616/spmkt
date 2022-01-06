@@ -1,0 +1,346 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* quick-menu(후원 및 문의) */
+.support_SM {
+  position: fixed;
+  z-index: 100;
+  right: 40px;
+  bottom: 150px;
+  background: #e87d17;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.support_SM a {
+  display: block;
+  padding: 10px 25px;
+  color: white;
+}
+
+.support_SM a:hover {
+  background: #3981e6;
+}
+
+/* section-01 */
+.main_top .wrapper {
+  overflow: hidden;
+  width: 100%;
+  min-width: 1200px;
+  height: 100vh;
+}
+
+.main_top .wrapper .slide_list:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.main_top .wrapper .slide_list li {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100vh;
+}
+
+.main_top .text_wrap {
+  position: relative;
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main_top .text_wrap strong {
+  color: white;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: 'Roboto Condensed';
+  line-height: 2.5;
+  letter-spacing: 3px;
+}
+
+.main_top .text_wrap p {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main_top .text_wrap em {
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: 'Roboto Condensed';
+  letter-spacing: 3px;
+}
+
+.main_top .screen {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.main_top .sl_01 {
+  background: url(../img/jpg/main_slide_bg/bg_01.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.main_top .sl_02 {
+  background: url(../img/jpg/main_slide_bg/bg_02.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.main_top .sl_03 {
+  background: url(../img/jpg/main_slide_bg/bg_03.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.main_top .sl_04 {
+  background: url(../img/jpg/main_slide_bg/bg_04.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+/* section-02,03 */
+.sec01, .sec02 {
+  background: #8dd437;
+}
+
+.sec01 .cont, .sec02 .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.sec01 .cont > div, .sec02 .cont > div {
+  position: relative;
+  float: left;
+}
+
+.sec01 h2, .sec02 h2 {
+  position: relative;
+  color: white;
+}
+
+.sec01 h2:after, .sec02 h2:after {
+  top: -15px;
+  width: 100px;
+  height: 2px;
+  background: white;
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+.sec01 .more, .sec02 .more {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background: #3d3a37;
+  color: white;
+}
+
+.sec01 .more:hover, .sec02 .more:hover {
+  background: white;
+  color: black;
+}
+
+.sec01 .more span, .sec02 .more span {
+  font-weight: 300;
+}
+
+.sec01 .cont {
+  -webkit-animation: text-slide1 2s;
+          animation: text-slide1 2s;
+}
+
+@-webkit-keyframes text-slide1 {
+  from {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-slide1 {
+  from {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.sec02 .cont {
+  -webkit-animation: text-slide2 2s;
+          animation: text-slide2 2s;
+}
+
+@-webkit-keyframes text-slide2 {
+  from {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-slide2 {
+  from {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.sec02 strong {
+  display: block;
+  padding-bottom: 10px;
+}
+
+/* section_between_background */
+.sec_between {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.first {
+  background: url(../img/jpg/unicef_work.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.second {
+  background: url(../img/jpg/marketing.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* explanation */
+.explanation .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.explanation .cont > div {
+  width: 30%;
+}
+
+.explanation .thumbnail {
+  width: 100%;
+  height: 200px;
+}
+
+.explanation .text_box strong {
+  display: block;
+  padding-top: 20px;
+  font-size: 1.2rem;
+}
+
+.explanation .text_box p {
+  padding: 20px 0;
+}
+
+/* section-04 */
+.sec03 * {
+  text-align: center;
+}
+
+.sec03 .cont {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.sec03 .cont h2 {
+  padding: 50px 0;
+}
+
+.sec03 .cont p {
+  margin-bottom: 30px;
+}
+
+.sec03 .cont .more {
+  color: #8dd437;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* section-05 */
+.sec04 {
+  background: white;
+}
+
+.sec04 h2 {
+  padding: 30px 0;
+  color: #8dd437;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.sec04 .wrapper {
+  overflow: hidden;
+}
+
+.sec04 .slide_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sec04 .slide_list .thumbnail {
+  overflow: hidden;
+  width: 250px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+.sec04 .slide_list .thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=main.css.map */
