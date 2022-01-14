@@ -22,11 +22,3 @@ setInterval(function(){
     .next().fadeIn().end(1000)
     .appendTo('.slide1 > ul'); 
 },4000);
-
-
-$('.autoplay').slick({ // index.html의 하단 이미지 슬라이드
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
