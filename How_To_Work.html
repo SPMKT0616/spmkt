@@ -6,8 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="pragma" content="no-cache">
 <meta name="viewport" content="width=deivice-width, initial-scale=1.0">
-<meta name="keywords" content="슈퍼마케팅, f2f, 굿피플, 홍보, ngo, npo, b2b">
-<meta name="description" content="슈퍼마케팅은 사람을 최우선 하며, 대기업에서 부터 NGO, NPO단체의 위탁을 받아 F2F마케팅을 하는 기업입니다.">
+<meta name="keywords" content="슈퍼마케팅, f2f, 굿피플, 마케팅, 홍보, 펀드레이저, ngo, npo, b2b">
+<meta name="description" content="슈퍼마케팅은 최고로 믿고 의지할 수 있는 마케터를 양성합니다.">
 <meta name="author" content="pubdev_LJB">
 <meta name="publisher" content="pubdev_LJB">
 <meta name="copyright" content="(주)슈퍼마케팅">
@@ -17,8 +17,11 @@
 <link rel="stylesheet" href="css/sub3.css">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
 <script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
 </head>
 <body>
 <div id="wrap">
@@ -30,34 +33,53 @@
                     <li><a href="About_Us.html">ABOUT US</a></li>
                     <li><a href="Our_Business.html">OUR BUSINESS</a></li>
                     <li><a href="How_To_Work.html">HOW TO WORK</a></li>
-                    <li><a href="Q&A.html">QUESTION & SUPPORT</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <div class="main_top heading_bg">
-            <strong>HOW TO WORK</strong>
+            <div class="cont">
+                <strong>HOW TO WORK</strong>
+                <p data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="1500">
+                    최고로 믿고 의지할 수 있는<br>
+                    마케터를 양성합니다
+                </p>
+            </div>
             <div class="screen"></div>
         </div>
         <section class="sec01">
-            <div class="cont">
+            <div class="cont top" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="1500">
                 <h2>WHO WE WANT</h2>
                 <div class="text_wrap">
                     <P>
-                        
+                        <span>성실과 긍정적인 태도</span>를 기본으로 하여<br>
+                        <span>타인을 존중하고, 항상 배우는 자세</span>로 비즈니스에 임하는 당신이<br>
+                        슈퍼마케팅이 원하는 인재의 모습입니다.
                     </P>
                 </div>
             </div>
+            <div class="cont bottom">
+                <div class="text_wrap" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <strong>근면, 성실(INDUSTRIOUS)</strong>
+                    <P>
+                        모든일에 솔직하고 맑고 거짓없이 비즈니스에 임하며 구성원으로서 과감한 실행력.
+                    </P>
+                </div>
+                <div class="text_wrap" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <strong>겸손(MODESTY)</strong>
+                    <P>자신의 역량을 파악하고 구성원들과 협업하여 큰 성과를 냄.</P>
+                </div>
+                <div class="text_wrap" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <strong>존중(RESPECT)</strong>
+                    <P>타인 혹은 고객, 구성원들을 정중히 대하며, 상대로 부터 진지한 태도를 이끌어내고, 기분좋은 소통을 함.</P>
+                </div>
+            </div>
         </section>
-        <section class="sec02">
+        <section class="sec02" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="1500">
             <div class="cont">
                 <h2>SPM RANK SYSTEM</h2>
-                <div class="text_wrap">
-                    <p>
-
-                    </p>
-                </div>
             </div>
         </section>
         <div class="sns">
@@ -78,6 +100,7 @@
     </footer>
 </div>
 <script>
+    AOS.init(); 
 </script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 }
 
 /* quick-menu(후원 및 문의) */
-.support_SM {
+.support_SPM {
   position: fixed;
   z-index: 100;
   right: 40px;
@@ -15,13 +15,13 @@
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.support_SM a {
+.support_SPM a {
   display: block;
   padding: 10px 25px;
   color: white;
 }
 
-.support_SM a:hover {
+.support_SPM a:hover {
   background: #3981e6;
 }
 
@@ -164,80 +164,12 @@
   font-weight: 300;
 }
 
-.sec01 .cont {
-  -webkit-animation: text-slide1 2s;
-          animation: text-slide1 2s;
-}
-
-@-webkit-keyframes text-slide1 {
-  from {
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes text-slide1 {
-  from {
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-.sec02 .cont {
-  -webkit-animation: text-slide2 2s;
-          animation: text-slide2 2s;
-}
-
-@-webkit-keyframes text-slide2 {
-  from {
-    -webkit-transform: translateX(500px);
-            transform: translateX(500px);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes text-slide2 {
-  from {
-    -webkit-transform: translateX(500px);
-            transform: translateX(500px);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
 .sec02 strong {
   display: block;
   padding-bottom: 10px;
 }
 
 /* section_between_background */
-.sec_between {
-  position: relative;
-  width: 100%;
-  height: 300px;
-}
-
 .first {
   background: url(../img/jpg/unicef_work.jpg) no-repeat center;
   background-size: cover;
@@ -288,7 +220,7 @@
 
 .sec03 .cont {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 
 .sec03 .cont h2 {
@@ -328,6 +260,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 50px 0 100px 0;
 }
 
 .sec04 .slide_list .thumbnail {

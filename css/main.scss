@@ -35,7 +35,7 @@ $contwidth: 1200px;
 }
 
 /* quick-menu(후원 및 문의) */
-.support_SM{
+.support_SPM{
     position: fixed;
     z-index: 100;
     right: 40px;
@@ -165,43 +165,12 @@ $contwidth: 1200px;
     }
 }
 
-.sec01 .cont{ animation: text-slide1 2s;}
-
-@keyframes text-slide1{
-    from{
-        transform: translateX(-500px);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-.sec02 .cont{ animation: text-slide2 2s;}
-
-@keyframes text-slide2{
-    from{
-        transform: translateX(500px);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
 .sec02 strong{
     display: block;
     padding-bottom: 10px;
 }
 
 /* section_between_background */
-.sec_between{
-    position: relative;
-    width: 100%;
-    height: 300px;
-}
 .first{ 
     background: url(../img/jpg/unicef_work.jpg) no-repeat center;
     background-size: cover;
@@ -235,12 +204,14 @@ $contwidth: 1200px;
     }
 }
 
+// }
+
 /* section-04 */
 .sec03{
     *{text-align: center;}
     .cont{
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 150px;
         h2{ padding: 50px 0;}
         p{ margin-bottom: 30px;}
         .more{
@@ -264,6 +235,7 @@ $contwidth: 1200px;
     .slide_list{
         display: flex;
         justify-content: space-between;
+        padding: 50px 0 100px 0;
         .thumbnail{
             overflow: hidden;
             width: 250px;

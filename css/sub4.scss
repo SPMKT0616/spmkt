@@ -1,0 +1,152 @@
+$maincolor: #8dd437;
+$subcolor1: #f2922c; 
+$subcolor2: #464647;
+
+*{box-sizing: border-box;}
+
+@mixin clearfix{
+    display: block;
+    clear: both;
+    content: '';
+}
+@mixin cont{
+    width: $contwidth;
+    min-width: $contwidth;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+@mixin contpadding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+@mixin abs0{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@mixin aftersty{
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+h2{
+    position: relative;
+    margin: 20px 0;
+    &:after{
+        top: -15px;
+        width: 100px;
+        height: 2px;
+        background: black;
+        @include aftersty;
+    }
+}
+
+/* heading-background */
+.heading_bg{ 
+    background: url(../img/jpg/contact/milkyway.jpg) no-repeat;
+    background-position: center bottom;
+}
+
+/* sub04-section-01 */
+.sec01{
+    .cont{
+        padding-top: 100px;
+        padding-bottom: 250px;
+        text-align: center;
+    }
+    h2{ 
+        padding-bottom: 70px;
+        &:after{ display: none;}
+    }
+    strong{ font-size: 1.2rem;}
+    p{ padding-top: 20px;}
+}
+
+/* section_between_background */
+.sec_between{
+    background: url(../img/jpg/contact/inspiration.jpg) no-repeat center;
+    background-size: cover;
+    background-position-y: -150px;
+    background-position-x: -360px;
+    .screen{
+        background: rgba(255,255,255,0.5);
+    }
+}
+
+/* sub04-section-02 */
+.sec02{
+    .cont{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    h2{ padding-bottom: 30px;}
+    .text_wrap{
+        width: 60%;
+        padding-right: 30px;
+        >div{
+            position: relative;
+            margin-bottom: 40px;
+            margin-left: 25px;
+            &:before{
+                left: -25px;
+                width: 4px;
+                height: 100%; 
+                background: #b5b5b5;
+                @include aftersty;
+            }
+        }
+        strong{font-size: 1.2rem;}
+        p{ padding-top: 10px;}
+    }
+}
+
+/* sub04-section-03 */
+.sec03{
+    background: #343436;
+    .cont{
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    h2{ 
+        color: white;
+        &:after{ background: white;}
+    } 
+    ul{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 70px;
+        color: white;
+    }
+    li{
+        text-align: center;
+        @for $i from 1 through 5{ 
+            &:nth-child(#{$i}) i{ 
+                 background-position-x: -140px * ($i - 1);
+            }
+       }
+        i{
+            display: block;
+            width: 140px;
+            height: 140px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            background: url(../img/png/contact/contact_us.png) no-repeat center;
+            background-size: cover;
+            &:hover{ 
+                transform: scale(1.1);
+                transition: all 0.3s;
+            }
+        }    
+    }
+}
+
+
+
+
+ 

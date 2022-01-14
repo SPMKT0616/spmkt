@@ -6,8 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="pragma" content="no-cache">
 <meta name="viewport" content="width=deivice-width, initial-scale=1.0">
-<meta name="keywords" content="슈퍼마케팅, f2f, 굿피플, 홍보, ngo, npo, b2b">
-<meta name="description" content="슈퍼마케팅은 사람을 최우선 하며, 대기업에서 부터 NGO, NPO단체의 위탁을 받아 F2F마케팅을 하는 기업입니다.">
+<meta name="keywords" content="슈퍼마케팅, f2f, 굿피플, 마케팅, 홍보, 펀드레이저, ngo, npo, b2b">
+<meta name="description" content="슈퍼마케팅은 자발적인 도전을 목표를 향해 나아갑니다.">
 <meta name="author" content="pubdev_LJB">
 <meta name="publisher" content="pubdev_LJB">
 <meta name="copyright" content="(주)슈퍼마케팅">
@@ -17,8 +17,11 @@
 <link rel="stylesheet" href="css/sub1.css">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
 <script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
 </head>
 <body>
 <div id="wrap">
@@ -30,18 +33,24 @@
                     <li><a href="About_Us.html">ABOUT US</a></li>
                     <li><a href="Our_Business.html">OUR BUSINESS</a></li>
                     <li><a href="How_To_Work.html">HOW TO WORK</a></li>
-                    <li><a href="Q&A.html">QUESTION & SUPPORT</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <div class="main_top heading_bg">
-            <strong>ABOUT US</strong>
+            <div class="cont">
+                <strong>ABOUT US</strong>
+                <p data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="1500">
+                    자발적인 도전으로<br>
+                    목표를 향해 나아갑니다<br>
+                 </p>
+            </div>
             <div class="screen"></div>
         </div>
         <section class="sec01">
-            <div class="cont">
+            <div class="cont" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="1500">
                 <div class="text_wrap">
                     <h2>INTRODUCE</h2>
                     <P>
@@ -55,13 +64,11 @@
                         고객사와 소외된 사람들에게 희망을 선물합니다.
                     </P>
                 </div>
-                <div class="img_wrap">
-                    <div class="screen"></div>
-                </div>
+                <div class="img_wrap"></div>
             </div>
         </section>
         <section class="sec02">
-            <div class="cont">
+            <div class="cont" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="1200">
                 <div class="img_wrap">
                     <img src="img/png/logo2.png" alt="슈퍼마케팅 로고">
                 </div>
@@ -81,7 +88,7 @@
             </div>
         </section>
         <section class="sec03">
-            <div class="cont">
+            <div class="cont" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="1500">
                 <h2>OUR CLIENTS</h2>
                 <ul>
                     <li class="client_co">
@@ -138,7 +145,7 @@
             </div>
         </section>
         <section class="sec04">
-            <div class="cont">
+            <div class="cont" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="1000">
                 <h2>CEO MESSEGE</h2>
                 <div class="text_wrap">
                     <p>
@@ -153,7 +160,7 @@
                         감동을 선물하여 업계 최고의 기업으로 거듭나고 있습니다.<br>
                         <br>
                         앞으로도 ㈜슈퍼 마케팅의 전 임직원은 현 상황에 만족하지 않고,<br>
-                         “어제보다는 오늘, 오늘보다는 내일이 기대되는 기업“ 이 될 수 있도록 최선을 다하겠습니다.<br>
+                         "어제보다는 오늘, 오늘보다는 내일이 기대되는 기업" 이 될 수 있도록 최선을 다하겠습니다.<br>
                         <br>
                         감사합니다.<br>
                         <br>
@@ -180,6 +187,7 @@
     </footer>
 </div>
 <script>
+    AOS.init(); 
 </script>
 </body>
 </html>

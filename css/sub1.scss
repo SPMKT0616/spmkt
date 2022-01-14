@@ -47,27 +47,7 @@ h2{
 }
 
 /* heading-background */
-.heading_bg{
-    position: relative;
-    width: 100%;
-    min-width: 1200px;
-    height: 250px;
-    padding-top: 95px;
-    background: url(../img/jpg/about_us/building.jpg) no-repeat;
-    background-position: center top;
-    background-size: cover;
-    strong{
-        display: block; 
-        position: relative;
-        z-index: 3;
-        top: 50%;
-        color: white;
-        font-size: 2.5rem;
-        text-align: center;
-        transform: translateY(-50%);
-        &:after{ display: none;}
-    }
-}
+.heading_bg{ background: url(../img/jpg/about_us/building.jpg) no-repeat;}
 
 /* sub01-section-01,02 */
 .sec01, .sec02{
@@ -99,7 +79,6 @@ h2{
 
 /* sub01-section-03 */
 .sec03{
-    min-width: 1200px;
     background: #343436;
     .cont{
         padding-top: 50px;
@@ -133,7 +112,6 @@ h2{
 
 /* sub01-section-04 */
 .sec04{
-    min-width: 1200px;
     background: url(../img/jpg/about_us/architecture.jpg) no-repeat center;
     background-size: cover;
     .cont{

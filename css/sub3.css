@@ -20,110 +20,76 @@ h2:after {
 
 /* heading-background */
 .heading_bg {
-  position: relative;
-  width: 100%;
-  height: 250px;
-  padding-top: 95px;
-  background: url(../img/jpg/how_to_work/architecture2.jpg) no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
-
-.heading_bg strong {
-  display: block;
-  position: relative;
-  z-index: 3;
-  top: 50%;
-  color: white;
-  font-size: 2.5rem;
-  text-align: center;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.heading_bg strong:after {
-  display: none;
+  background: url(../img/jpg/how_to_work/building3.jpg) no-repeat;
 }
 
 /* sub03-section-01 */
-.sec01 {
-  background: #343434;
-}
-
-.sec01 .cont {
-  padding-top: 70px;
+.sec01 .top {
+  height: 1050px;
+  padding-top: 100px;
   padding-bottom: 50px;
+  background: url(../img/png/how_to_work/attitude.png) no-repeat;
+  background-position: center bottom;
+  background-size: contain;
 }
 
-.sec01 h2 {
-  color: white;
-  text-align: center;
-}
-
-.sec01 h2:after {
-  display: none;
-}
-
-.sec01 .text_wrap {
-  text-align: center;
-}
-
-.sec01 .text_wrap p {
+.sec01 .top .text_wrap p {
   padding-top: 30px;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.sec01 .top .text_wrap span {
+  color: #f07a13;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.sec01 .bottom {
+  padding-bottom: 80px;
+}
+
+.sec01 .bottom .text_wrap {
+  position: relative;
+  margin-bottom: 80px;
+  margin-left: 40px;
+}
+
+.sec01 .bottom .text_wrap:before {
+  left: -25px;
+  width: 4px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+.sec01 .bottom .text_wrap:first-child:before {
+  background: #AFD485;
+}
+
+.sec01 .bottom .text_wrap:nth-child(2):before {
+  background: #12887A;
+}
+
+.sec01 .bottom .text_wrap:last-child:before {
+  background: #7DB249;
+}
+
+.sec01 .bottom .text_wrap strong {
+  font-size: 1.2rem;
+}
+
+.sec01 .bottom .text_wrap p {
+  padding-top: 15px;
 }
 
 /* sub03-section-02 */
 .sec02 .cont {
+  height: 700px;
   padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.sec02 .cont ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.sec02 h2 + p {
-  padding: 40px 0 60px 0;
-}
-
-.sec02 .client_co {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 50px;
-}
-
-.sec02 .thumbnail {
-  width: 200px;
-  height: 200px;
-}
-
-.sec02 .thumbnail img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.sec02 .text_wrap {
-  width: 850px;
-}
-
-.sec02 .text_wrap strong {
-  font-size: 1.2rem;
-}
-
-.sec02 .text_wrap p {
-  padding-top: 20px;
-  font-size: 1rem;
+  background: url(../img/png/how_to_work/structure.png) no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 /*# sourceMappingURL=sub3.css.map */

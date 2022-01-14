@@ -46,75 +46,59 @@ h2{
 }
 
 /* heading-background */
-.heading_bg{
-    position: relative;
-    width: 100%;
-    height: 250px;
-    padding-top: 95px;
-    background: url(../img/jpg/how_to_work/architecture2.jpg) no-repeat;
-    background-position: center top;
-    background-size: cover;
-    strong{
-        display: block; 
-        position: relative;
-        z-index: 3;
-        top: 50%;
-        color: white;
-        font-size: 2.5rem;
-        text-align: center;
-        transform: translateY(-50%);
-        &:after{ display: none;}
-    }
-}
+.heading_bg{ background: url(../img/jpg/how_to_work/building3.jpg) no-repeat;}
 
 /* sub03-section-01 */
 .sec01{
-    background: #343434;
-    .cont{
-        padding-top: 70px;
+    .top{
+        height: 1050px;
+        padding-top: 100px;
         padding-bottom: 50px;
+        background: url(../img/png/how_to_work/attitude.png) no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        .text_wrap{
+            p{
+                padding-top: 30px;
+                font-weight: 300;
+                font-size: 1.4rem;
+            }
+            span{
+                color: #f07a13;
+                font-weight: 300;
+                font-size: 1.6rem;
+            }
+        }
     }
-    h2{
-        color: white; 
-        text-align: center;
-        &:after{ display: none;}}
-    .text_wrap{
-        text-align: center;
-        p{padding-top: 30px;}
+    .bottom{
+        padding-bottom: 80px;
+        .text_wrap{
+            position: relative;
+            margin-bottom: 80px;
+            margin-left: 40px;
+            &:before{
+                left: -25px;
+                width: 4px;
+                height: 100%; 
+                @include aftersty;
+            }
+            &:first-child:before{ background: #AFD485;}
+            &:nth-child(2):before{ background: #12887A;}
+            &:last-child:before{ background: #7DB249;}
+            strong{font-size: 1.2rem;}
+            p{ padding-top: 15px;}
+        }
     }
 }
 
 /* sub03-section-02 */
 .sec02{
     .cont{
+        height: 700px;
         padding-top: 50px;
-        padding-bottom: 50px;
-        ul{
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    h2+p{ padding: 40px 0 60px 0;}
-    .client_co{ 
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
-    }
-    .thumbnail{
-        width: 200px;
-        height: 200px;
-        img:hover{
-            transform: scale(1.1);
-            transition: all 0.3s;
-        }
-    }
-    .text_wrap{
-        width: 850px;
-        strong{ font-size: 1.2rem;}
-        p{ 
-            padding-top: 20px;
-            font-size: 1rem;
-        }
+        background: url(../img/png/how_to_work/structure.png) no-repeat;
+        background-position: center;
+        background-size: contain;
     }
 }
 
