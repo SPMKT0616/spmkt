@@ -1,4 +1,4 @@
-$(function(){
+$(function(){ //헤더 스크롤시 색상이 바뀜
     var $header = $('header');  //헤더를 변수에 넣기
     var $page = $('.main_top strong');  //색상이 변할 부분
     var $window = $(window);
@@ -14,10 +14,19 @@ $header.toggleClass('down', scrolled);  //클래스 토글
 });
 });
 
-$('.slide1 > ul > li').hide(); //메인페이지 슬라이드
+
+$('.slide1 > ul > li').hide(); //메인페이지(최상단) 슬라이드
 $('.slide1 > ul > li:first-child').show(); 
 setInterval(function(){
     $('.slide1 > ul > li:first-child').fadeOut()
     .next().fadeIn().end(1000)
     .appendTo('.slide1 > ul'); 
 },4000);
+
+
+$('.autoplay').slick({ // index.html의 하단 이미지 슬라이드
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
