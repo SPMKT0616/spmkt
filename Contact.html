@@ -22,7 +22,7 @@
 <script src="js/script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+<script class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -132,7 +132,7 @@
         </div>
     </footer>
 </div>
-<script charset="UTF-8">
+<script>
     AOS.init(); 
 
 	new daum.roughmap.Lander({
@@ -141,7 +141,6 @@
 		"mapWidth" : "400",
 		"mapHeight" : "360"
 	}).render();
-</script>
 </script>
 </body>
 </html> 
