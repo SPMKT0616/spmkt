@@ -29,7 +29,6 @@
 .main_top .wrapper {
   overflow: hidden;
   width: 100%;
-  min-width: 1200px;
   height: 100vh;
 }
 
@@ -48,12 +47,11 @@
 
 .main_top .text_wrap {
   position: relative;
-  width: 800px;
   height: 100%;
   margin: 0 auto;
 }
 
-.main_top .text_wrap strong {
+.main_top strong {
   color: white;
   font-weight: 700;
   font-size: 2.5rem;
@@ -62,7 +60,7 @@
   letter-spacing: 3px;
 }
 
-.main_top .text_wrap p {
+.main_top p {
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -75,7 +73,7 @@
           transform: translate(-50%, -50%);
 }
 
-.main_top .text_wrap em {
+.main_top em {
   font-weight: 700;
   font-size: 1.8rem;
   font-family: 'Roboto Condensed';
@@ -102,7 +100,7 @@
 }
 
 .main_top .sl_04 {
-  background: url(../img/jpg/main_slide_bg/bg_04.jpeg) no-repeat center;
+  background: url(../img/jpg/main_slide_bg/bg_04.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -148,7 +146,7 @@
 .sec01 .more, .sec02 .more {
   position: absolute;
   right: 0;
-  bottom: -30px;
+  bottom: -40px;
   padding: 5px 15px;
   border-radius: 20px;
   background: #3d3a37;
@@ -171,7 +169,7 @@
 
 /* section_between_background */
 .first {
-  background: url(../img/jpg/unicef_work.jpg) no-repeat center;
+  background: url(../img/jpg/office.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -254,8 +252,8 @@
 }
 
 .sec04 .slide_list {
-  padding: 50px 0 100px 0;
   width: 200%;
+  padding: 50px 0 100px 0;
 }
 
 .sec04 .slide_list:after {
@@ -265,8 +263,8 @@
 }
 
 .sec04 .slide_list .thumbnail {
-  float: left;
   overflow: hidden;
+  float: left;
   width: calc(1160px / 3 - 30px);
   height: 250px;
   margin: 15px;
@@ -277,5 +275,36 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* Media Query */
+@media screen and (max-width: 960px) {
+  .sec01 .cont {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .sec01 .right {
+    margin-bottom: 20px;
+  }
+  .sec02 .cont {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sec02 .left {
+    margin-bottom: 20px;
+  }
+  .explanation .cont {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+  }
+  .explanation .cont > div {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .sec03 h2 {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

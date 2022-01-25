@@ -9,16 +9,24 @@
           box-sizing: border-box;
 }
 
-#wrap > *:not(.support_SPM) {
-  min-width: 1200px;
+main {
+  width: 100%;
 }
 
 main > * {
-  min-width: 1200px;
+  width: 100%;
+}
+
+main .cont {
+  max-width: 1200px;
+}
+
+section {
+  overflow-x: hidden;
 }
 
 .cont {
-  width: 1200px;
+  max-width: 1200px;
   padding-right: 20px;
   padding-left: 20px;
   margin: 0 auto;
@@ -90,6 +98,8 @@ header .cont {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  max-width: 1800px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -98,9 +108,14 @@ header .logo img {
   height: 65px;
 }
 
-nav li {
-  float: left;
-  margin-right: 20px;
+nav .gnb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 530px;
 }
 
 nav li:first-child a {
@@ -111,8 +126,8 @@ nav li a {
   display: block;
   height: 65px;
   color: white;
-  font-size: 1.1rem;
   font-weight: 600;
+  font-size: 1.1rem;
   line-height: 65px;
   letter-spacing: 1px;
 }
@@ -140,12 +155,14 @@ nav li a:hover {
 
 /* footer */
 footer {
-  min-width: 1200px;
+  width: 100%;
   background: #3d3a37;
+  text-align: center;
 }
 
 footer .cont {
   position: relative;
+  max-width: 1200px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -185,7 +202,7 @@ footer .instagram {
   padding-bottom: 70px;
 }
 
-.heading_bg .cont strong {
+.heading_bg strong {
   display: block;
   position: relative;
   z-index: 3;
@@ -193,17 +210,17 @@ footer .instagram {
   margin-bottom: 80px;
   color: white;
   font-size: 2.5rem;
+  letter-spacing: 1px;
   text-align: center;
   -webkit-transform: translateY(-25%);
           transform: translateY(-25%);
-  letter-spacing: 1px;
 }
 
-.heading_bg .cont strong:after {
+.heading_bg strong:after {
   display: none;
 }
 
-.heading_bg .cont p {
+.heading_bg p {
   position: relative;
   z-index: 3;
   color: white;
@@ -216,5 +233,62 @@ footer .instagram {
   position: relative;
   width: 100%;
   height: 400px;
+}
+
+/* Media Query */
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+  section .cont {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 70px !important;
+    padding-bottom: 40px !important;
+  }
+  section .cont p {
+    line-height: 1.5;
+  }
+  section .cont p br {
+    display: none;
+  }
+  section strong {
+    font-size: 1.3rem;
+  }
+  .cont {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .main_top strong {
+    font-size: 8vw !important;
+  }
+  .main_top p {
+    font-size: 4.8vw !important;
+  }
+  .heading_bg {
+    padding-top: 60px;
+  }
+  .heading_bg strong {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .support_SPM {
+    display: none;
+  }
+  header .logo img {
+    height: 40px;
+  }
+  header .cont {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  header nav {
+    display: none;
+  }
 }
 /*# sourceMappingURL=common.css.map */

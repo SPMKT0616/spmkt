@@ -12,7 +12,7 @@ $contwidth: 1200px;
 }
 @mixin cont{
     width: $contwidth;
-    min-width: $contwidth;
+    // min-width: $contwidth;
     padding-right: 20px;
     padding-left: 20px;
     margin: 0 auto;
@@ -57,7 +57,7 @@ $contwidth: 1200px;
     .wrapper{
         overflow: hidden;
         width: 100%;
-        min-width: 1200px;
+        // min-width: 1200px;
         height: 100vh;
         .slide_list{
             &:after{ @include clearfix;}
@@ -69,13 +69,12 @@ $contwidth: 1200px;
             }
         }
     }
-}
-
-.main_top .text_wrap{
-    position: relative;
-    width: 800px;
-    height: 100%;
-    margin: 0 auto;
+    .text_wrap{
+        position: relative;
+        // width: 800px;
+        height: 100%;
+        margin: 0 auto;
+    } 
     strong{
         color: white;
         font-weight: 700;
@@ -118,7 +117,7 @@ $contwidth: 1200px;
     background-size: cover;
 }
 .main_top .sl_04{ 
-    background: url(../img/jpg/main_slide_bg/bg_04.jpeg) no-repeat center;
+    background: url(../img/jpg/main_slide_bg/bg_04.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -150,7 +149,7 @@ $contwidth: 1200px;
     .more{
         position: absolute;
         right: 0;
-        bottom: -30px;
+        bottom: -40px;
         padding: 5px 15px;
         border-radius: 20px;
         background: $subcolor2;
@@ -172,7 +171,7 @@ $contwidth: 1200px;
 
 /* section_between_background */
 .first{ 
-    background: url(../img/jpg/unicef_work.jpg) no-repeat center;
+    background: url(../img/jpg/office.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -204,8 +203,6 @@ $contwidth: 1200px;
     }
 }
 
-// }
-
 /* section-04 */
 .sec03{
     *{text-align: center;}
@@ -233,14 +230,14 @@ $contwidth: 1200px;
     }
     .wrapper{ overflow: hidden;}
     .slide_list{
-        padding: 50px 0 100px 0;
         width: 200%;
+        padding: 50px 0 100px 0;
         &:after{
             @include clearfix;
         }
         .thumbnail{
-            float: left;
             overflow: hidden;
+            float: left;
             width: calc(1160px / 3 - 30px);
             height: 250px;
             margin: 15px;
@@ -254,3 +251,28 @@ $contwidth: 1200px;
     }
 }
 
+/* Media Query */
+@media screen and (max-width: 960px){
+    .sec01{
+        .cont{ flex-wrap: wrap-reverse;}
+        .right{ margin-bottom: 20px;}
+    }
+    .sec02{
+        .cont{ flex-wrap: wrap;}
+        .left{ margin-bottom: 20px;}
+    }
+    .explanation{
+        .cont{
+            flex-wrap: wrap;
+            padding-top: 70px !important;
+            padding-bottom: 70px !important;
+            > div{
+                width: 100%;
+                padding-bottom: 30px;
+            }
+        }
+    }
+    .sec03{
+        h2{ font-size: 2rem;}
+    }
+}

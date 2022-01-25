@@ -35,7 +35,6 @@ h2:after {
 
 .sec01 .text_wrap, .sec02 .text_wrap {
   width: 60%;
-  padding-right: 30px;
 }
 
 .sec01 .text_wrap p, .sec02 .text_wrap p {
@@ -43,17 +42,24 @@ h2:after {
 }
 
 .sec01 .img_wrap, .sec02 .img_wrap {
-  position: relative;
   width: 40%;
+}
+
+.sec01 .text_wrap {
+  padding-right: 30px;
 }
 
 .sec01 .img_wrap {
   background: url(../img/jpg/about_us/business.jpg) no-repeat center;
 }
 
+.sec02 .text_wrap {
+  padding-left: 30px;
+}
+
 .sec02 .img_wrap img {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -77,13 +83,19 @@ h2:after {
 }
 
 .sec03 ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px 0;
+  padding-top: 30px;
+}
+
+.sec03 li {
+  margin-bottom: 50px;
 }
 
 .sec03 .thumbnail {
@@ -129,7 +141,69 @@ h2:after {
 }
 
 .sec04 .text_wrap p {
-  padding: 50px 0;
+  padding: 50px 15px;
   line-height: 2;
+}
+
+/* Media Query */
+@media screen and (max-width: 960px) {
+  .sec01 .cont {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .sec01 .img_wrap {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .sec01 .text_wrap {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-right: 0px;
+  }
+  .sec01 .text_wrap br {
+    display: none;
+  }
+  .sec02 .cont {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .sec02 .img_wrap {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .sec02 .img_wrap img {
+    width: 100%;
+  }
+  .sec02 .text_wrap {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-bottom: 100px;
+    padding-left: 0px;
+  }
+  .sec03 ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sec03 li .thumbnail {
+    width: 220px;
+    height: 220px;
+  }
+  .sec04 .cont {
+    padding: 80px 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sec03 li {
+    width: 100%;
+  }
+  .sec03 li .thumbnail {
+    width: 100%;
+    height: 250px;
+  }
+  .sec04 strong + br {
+    display: block !important;
+  }
 }
 /*# sourceMappingURL=sub1.css.map */

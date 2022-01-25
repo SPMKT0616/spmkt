@@ -51,12 +51,8 @@ h2{
 /* sub03-section-01 */
 .sec01{
     .top{
-        height: 1050px;
         padding-top: 100px;
         padding-bottom: 50px;
-        background: url(../img/png/how_to_work/attitude.png) no-repeat;
-        background-position: center bottom;
-        background-size: contain;
         .text_wrap{
             p{
                 padding-top: 30px;
@@ -68,6 +64,10 @@ h2{
                 font-weight: 300;
                 font-size: 1.6rem;
             }
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
         }
     }
     .bottom{
@@ -102,5 +102,26 @@ h2{
     }
 }
 
+@media screen and (max-width: 960px){
+    .sec01{
+        .top{ 
+            p{font-size: 1.1rem !important;}
+            span{font-size: 1.2rem !important;}
+        }
+        img{
+            object-fit:fill;
+        }
+    }
+    .sec02{
+        li{ flex-wrap: wrap;}
+        .thumbnail{ flex-basis: 100%;}
+        .text_wrap{ 
+            flex-basis: 100%;
+            margin-left: 0px;
+            margin-top : 30px;
+            br{ display: none;}
+        }
 
+    }
+}
 

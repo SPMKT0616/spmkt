@@ -25,12 +25,8 @@ h2:after {
 
 /* sub03-section-01 */
 .sec01 .top {
-  height: 1050px;
   padding-top: 100px;
   padding-bottom: 50px;
-  background: url(../img/png/how_to_work/attitude.png) no-repeat;
-  background-position: center bottom;
-  background-size: contain;
 }
 
 .sec01 .top .text_wrap p {
@@ -43,6 +39,12 @@ h2:after {
   color: #f07a13;
   font-weight: 300;
   font-size: 1.6rem;
+}
+
+.sec01 .top img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .sec01 .bottom {
@@ -91,5 +93,35 @@ h2:after {
   background: url(../img/png/how_to_work/structure.png) no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+@media screen and (max-width: 960px) {
+  .sec01 .top p {
+    font-size: 1.1rem !important;
+  }
+  .sec01 .top span {
+    font-size: 1.2rem !important;
+  }
+  .sec01 img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .sec02 li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sec02 .thumbnail {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .sec02 .text_wrap {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .sec02 .text_wrap br {
+    display: none;
+  }
 }
 /*# sourceMappingURL=sub3.css.map */

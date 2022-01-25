@@ -9,7 +9,7 @@ $contwidth: 1200px;
     content: '';
 }
 @mixin cont{
-    width: $contwidth;
+    max-width: $contwidth;
     padding-right: 20px;
     padding-left: 20px;
     margin: 0 auto;
@@ -40,9 +40,13 @@ $contwidth: 1200px;
 /*layout base */
 *{ box-sizing: border-box;}
 
-#wrap > *:not(.support_SPM){ min-width: $contwidth;}
+main{ width: 100%;}
 
-main > *{min-width: $contwidth;}
+main > *{ width: 100%;}
+
+main .cont{ max-width: 1200px;}
+
+section{ overflow-x: hidden;}
 
 .cont{ @include cont;}
 
@@ -77,7 +81,6 @@ p{
     strong{
             color: #404040;
             font-weight: 400; font-size: 1.4rem;
-
     }
 }
 
@@ -92,6 +95,8 @@ header{
     .cont{
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        max-width: 1800px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -101,16 +106,19 @@ header{
 }
 
 nav{
+    .gnb{
+        display: flex;
+        justify-content: space-between;
+        width: 530px;
+    }
     li{
-        float: left;
-        margin-right: 20px;
         &:first-child a{ color: $subcolor1;}
         a{
             display: block;
             height: 65px;
             color: white;
-            font-size: 1.1rem;
-            font-weight: 600; 
+            font-weight: 600;
+            font-size: 1.1rem; 
             line-height: 65px;
             letter-spacing: 1px;
             &:hover{ color: $maincolor;}
@@ -130,10 +138,13 @@ nav{
 
 /* footer */
 footer{
-    min-width: 1200px;
+    width: 100%;
     background: $subcolor2;
+    // min-width: 1200px;
+    text-align: center;
     .cont{
         position: relative;
+        max-width: 1200px;
         padding-top:30px;
         padding-bottom: 30px;
         >p{padding-bottom: 25px;}
@@ -162,26 +173,26 @@ footer{
         position: relative;
         padding-top: 50px;
         padding-bottom: 70px;
-        strong{
-            display: block; 
-            position: relative;
-            z-index: 3;
-            top: 50%;
-            margin-bottom: 80px;
-            color: white;
-            font-size: 2.5rem;
-            text-align: center;
-            transform: translateY(-25%);
-            letter-spacing: 1px;
-            &:after{ display: none;}
-        }
-        p{
-            position: relative;
-            z-index: 3;
-            color: white;
-            font-weight: 300;
-            font-size: 2.2rem;
-        }
+    }
+    strong{
+        display: block; 
+        position: relative;
+        z-index: 3;
+        top: 50%;
+        margin-bottom: 80px;
+        color: white;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        text-align: center;
+        transform: translateY(-25%);
+        &:after{ display: none;}
+    }
+    p{
+        position: relative;
+        z-index: 3;
+        color: white;
+        font-weight: 300;
+        font-size: 2.2rem;
     }
 }
 
@@ -190,4 +201,48 @@ footer{
     position: relative;
     width: 100%;
     height: 400px;
+}
+
+
+
+/* Media Query */
+@media screen and (max-width: 480px){
+    h2{ font-size: 1.8rem;}
+    section{
+        .cont{
+            flex-wrap: wrap;
+            padding-top: 70px !important;
+            padding-bottom: 40px !important;
+            p{ 
+                line-height: 1.5;
+                br{ display: none;}
+            }
+        }
+        strong{ font-size: 1.3rem;}   
+    }
+    .cont{ 
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    p{ font-size: 1rem;}
+    .main_top{
+        strong{ font-size: 8vw !important;}
+        p{ font-size: 4.8vw !important;}
+    }
+    .heading_bg{
+        padding-top: 60px;
+        strong{ margin-bottom: 50px;}
+    }
+}
+
+@media screen and (max-width: 960px){
+    .support_SPM{ display: none;}
+    header{
+        .logo img{ height: 40px;}
+        .cont{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        nav{ display: none;}
+    }
 }

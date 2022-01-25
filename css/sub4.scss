@@ -104,6 +104,14 @@ h2{
         strong{font-size: 1.2rem;}
         p{ padding-top: 10px;}
     }
+    .img_wrap{
+        width: 40%;
+        .root_daum_roughmap{
+            width: 100%;
+            height: 100%;
+        }
+        .wrap_map{ height: 100%;}
+    }
 }
 
 /* sub04-section-03 */
@@ -129,7 +137,7 @@ h2{
             &:nth-child(#{$i}) i{ 
                  background-position-x: -140px * ($i - 1);
             }
-       }
+        }
         i{
             display: block;
             width: 140px;
@@ -146,7 +154,48 @@ h2{
     }
 }
 
+/* Media Query */
+@media screen and (max-width: 960px){
+    .sec_between{
+        display: none;
+    }
+    .sec01{
+        .cont{ padding-bottom: 30px;}
+    }
+    .sec02{
+        .cont{ flex-wrap: wrap;}
+        .text_wrap{ flex-basis: 100%;}
+        .img_wrap{ flex-basis: 100%;}
+        .wrap_map{ height: 300px !important;}
 
+    }
+    .sec03{
+        ul{flex-wrap: wrap;}
+        li{
+            width: 40%;
+            padding-bottom: 50px;
+            @for $i from 1 through 5{ 
+                &:nth-child(#{$i}) i{ background-position-x: -100px * ($i - 1);}
+            }
+            i{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .sec03{
+        li{
+            padding-bottom: 25px;
+            @for $i from 1 through 5{ 
+                &:nth-child(#{$i}) i{ background-position-x: -100px * ($i - 1);}
+            }
+            span{ font-size: 0.9rem;}
+        }
+    }
+}
 
 
  

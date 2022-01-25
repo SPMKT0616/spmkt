@@ -55,15 +55,8 @@ h2{
         padding-top: 100px;
         padding-bottom: 150px;
     }
-    .img_wrap{ 
-        width: 50%;
-        height: 500px;
-        background: url(../img/png/branches/branches.png) no-repeat center;
-        background-size: contain;
-    }
     .text_wrap{
         width: 50%;
-        padding-left: 50px;
         p{ padding-top: 30px;}
     }
 }
@@ -87,36 +80,6 @@ h2{
         ul{
             display: flex;
             flex-direction: column;
-        }
-    }
-    h2+p{ padding: 40px 0 60px 0;}
-    .client_co{ 
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
-    }
-    .thumbnail{
-        width: 200px;
-        height: 200px;
-        img:hover{
-            transform: scale(1.1);
-            transition: all 0.3s;
-        }
-    }
-    .text_wrap{
-        width: 850px;
-        strong{ font-size: 1.2rem;}
-        p{ 
-            position: relative;
-            margin-top: 20px;
-            font-size: 1rem;
-            &:before{
-                left: -25px;
-                width: 4px;
-                height: 100%;
-                background: #b5b5b5; 
-                @include aftersty;
-            }
         }
     }
 }
