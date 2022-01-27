@@ -22,3 +22,14 @@ setInterval(function(){
     .next().fadeIn().end(1000)
     .appendTo('.slide1 > ul'); 
 },4000);
+
+const header =  document.querySelector('header')
+const hamBtn = document.querySelector('.ham_btn');
+const menu = document.querySelector('.gnb')
+
+hamBtn.addEventListener('click',() =>{
+    header.classList.toggle('active');
+    menu.classList.toggle('active');
+})
+
+

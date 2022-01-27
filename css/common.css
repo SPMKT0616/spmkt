@@ -111,9 +111,12 @@ header .logo img {
   height: 65px;
 }
 
-header .ham_btn img {
+header .ham_btn {
   display: none;
-  height: 30px;
+  position: absolute;
+  right: 20px;
+  color: white;
+  font-size: 35px;
 }
 
 nav .gnb {
@@ -123,7 +126,10 @@ nav .gnb {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 530px;
+}
+
+nav li {
+  padding: 0 12px;
 }
 
 nav li:first-child a {
@@ -132,12 +138,12 @@ nav li:first-child a {
 
 nav li a {
   display: block;
-  height: 65px;
   color: white;
   font-weight: 600;
   font-size: 1.1rem;
   line-height: 65px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 nav li a:hover {
@@ -292,14 +298,40 @@ footer .instagram {
     height: 40px;
   }
   header .cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding-top: 10px;
     padding-bottom: 10px;
   }
   header nav {
-    display: none;
+    width: 100%;
   }
-  header .ham_btn img {
+  header .gnb {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  header .gnb a {
+    line-height: 45px;
+  }
+  header .gnb.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .ham_btn {
     display: block;
+  }
+  header.active {
+    background: rgba(0, 0, 0, 0.8);
   }
 }
 /*# sourceMappingURL=common.css.map */

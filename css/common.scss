@@ -102,9 +102,12 @@ header{
         padding-bottom: 15px;
     }
     .logo img{ height: 65px;}
-    .ham_btn img{ 
+    .ham_btn{
         display: none;
-        height: 30px;
+        position: absolute;
+        right: 20px;
+        color: white;
+        font-size: 35px;
     }
 }
 
@@ -112,18 +115,18 @@ nav{
     .gnb{
         display: flex;
         justify-content: space-between;
-        width: 530px;
     }
     li{
+        padding: 0 12px;
         &:first-child a{ color: $subcolor1;}
         a{
             display: block;
-            height: 65px;
             color: white;
             font-weight: 600;
             font-size: 1.1rem; 
             line-height: 65px;
             letter-spacing: 1px;
+            text-align: center;
             &:hover{ color: $maincolor;}
         }
     }
@@ -243,10 +246,20 @@ footer{
     header{
         .logo img{ height: 40px;}
         .cont{
+            flex-direction: column;
+            align-items: flex-start;
             padding-top: 10px;
             padding-bottom: 10px;
         }
-        nav{ display: none;}
-        .ham_btn img{ display: block;}
+        nav{ width: 100%;}
+        .gnb{
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            a{ line-height: 45px;}
+        }
+        .gnb.active{ display: flex;}
+        .ham_btn{ display: block;}
     }
+    header.active{ background: rgba(0,0,0,0.8);}
 }
