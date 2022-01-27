@@ -129,9 +129,19 @@ h2{
     .text_wrap{
         margin-top: 50px;
         background: white;
+        strong{
+            display: block;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
         p{
             padding: 50px 15px;
             line-height: 2;
+        }
+        span{ 
+            display: block;
+            margin-top: 20px;
+            font-weight: 600;
         }
     }
 }
@@ -188,5 +198,7 @@ h2{
             }
         }
     }
-    .sec04{ strong+br{display: block !important;}}
+    .sec04{ 
+        strong+br{display: block !important;}
+    }
 }

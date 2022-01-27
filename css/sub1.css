@@ -140,9 +140,21 @@ h2:after {
   background: white;
 }
 
+.sec04 .text_wrap strong {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
 .sec04 .text_wrap p {
   padding: 50px 15px;
   line-height: 2;
+}
+
+.sec04 .text_wrap span {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
 }
 
 /* Media Query */
