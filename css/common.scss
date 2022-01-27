@@ -95,13 +95,16 @@ header{
     .cont{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
         max-width: 1800px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    .logo img{
-        height: 65px;
+    .logo img{ height: 65px;}
+    .ham_btn img{ 
+        display: none;
+        height: 30px;
     }
 }
 
@@ -244,5 +247,6 @@ footer{
             padding-bottom: 10px;
         }
         nav{ display: none;}
+        .ham_btn img{ display: block;}
     }
 }

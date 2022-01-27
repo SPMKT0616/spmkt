@@ -98,6 +98,9 @@ header .cont {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   max-width: 1800px;
   padding-top: 15px;
@@ -106,6 +109,11 @@ header .cont {
 
 header .logo img {
   height: 65px;
+}
+
+header .ham_btn img {
+  display: none;
+  height: 30px;
 }
 
 nav .gnb {
@@ -289,6 +297,9 @@ footer .instagram {
   }
   header nav {
     display: none;
+  }
+  header .ham_btn img {
+    display: block;
   }
 }
 /*# sourceMappingURL=common.css.map */

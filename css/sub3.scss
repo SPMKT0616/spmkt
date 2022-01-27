@@ -94,11 +94,15 @@ h2{
 /* sub03-section-02 */
 .sec02{
     .cont{
-        height: 700px;
-        padding-top: 50px;
-        background: url(../img/png/how_to_work/structure.png) no-repeat;
-        background-position: center;
-        background-size: contain;
+        padding-top: 100px;
+    }
+    .img_wrap{
+        padding-top: 100px;
+        padding-bottom: 150px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }
 
@@ -107,6 +111,11 @@ h2{
         .top{ 
             p{font-size: 1.1rem !important;}
             span{font-size: 1.2rem !important;}
+        }
+        .bottom{ 
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            .text_wrap{ margin-bottom: 40px;}
         }
     }
     .sec02{
