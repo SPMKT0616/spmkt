@@ -57,6 +57,10 @@ h2:after {
   padding-left: 30px;
 }
 
+.sec02 .text_wrap span {
+  color: #2489bc;
+}
+
 .sec02 .img_wrap img {
   width: 350px;
   height: 350px;

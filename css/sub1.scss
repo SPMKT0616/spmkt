@@ -1,6 +1,6 @@
-$maincolor: #8dd437;
+$maincolor: #2489bc;
 $subcolor1: #f2922c; 
-$subcolor2: #464647;
+$subcolor2: #333333;
 
 *{box-sizing: border-box;}
 
@@ -65,19 +65,24 @@ h2{
     }
 }
 
-.sec01 .text_wrap{ padding-right: 30px;}
+.sec01{
+    .text_wrap{ padding-right: 30px;}
+    .img_wrap{ background: url(../img/jpg/about_us/business.jpg) no-repeat center;}
+} 
 
-.sec01 .img_wrap{ background: url(../img/jpg/about_us/business.jpg) no-repeat center;}
-
-.sec02 .text_wrap{ padding-left: 30px;}
-
-.sec02 .img_wrap{
-    img{
-    width: 350px;
-    height: 350px;
-    object-fit: contain;
+.sec02{
+    .text_wrap{ 
+        padding-left: 30px;
+        span{ color: $maincolor}
     }
-}
+    .img_wrap{
+        img{
+        width: 350px;
+        height: 350px;
+        object-fit: contain;
+        }
+    }
+} 
 
 /* sub01-section-03 */
 .sec03{
