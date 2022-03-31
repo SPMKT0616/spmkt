@@ -41,14 +41,14 @@ h2:after {
   font-size: 1.6rem;
 }
 
-.sec01 .top img {
+.sec01 .top .img_wrap {
+  margin-top: 70px;
+}
+
+.sec01 .top .img_wrap img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.sec01 .bottom {
-  padding-bottom: 80px;
 }
 
 .sec01 .bottom .text_wrap {
@@ -67,15 +67,19 @@ h2:after {
 }
 
 .sec01 .bottom .text_wrap:first-child:before {
-  background: #AFD485;
+  background: #B8E9FF;
 }
 
 .sec01 .bottom .text_wrap:nth-child(2):before {
-  background: #12887A;
+  background: #58CCFF;
+}
+
+.sec01 .bottom .text_wrap:nth-child(3):before {
+  background: #1187CF;
 }
 
 .sec01 .bottom .text_wrap:last-child:before {
-  background: #7DB249;
+  background: #3A4CA8;
 }
 
 .sec01 .bottom .text_wrap strong {
@@ -86,17 +90,48 @@ h2:after {
   padding-top: 15px;
 }
 
-/* sub03-section-02 */
+/* sub2-section-03 */
+.sec02 {
+  background: url(../img/jpg/how_to_work/lighthouse.jpg) no-repeat center;
+  background-size: cover;
+}
+
 .sec02 .cont {
+  padding: 120px;
+  text-align: center;
+}
+
+.sec02 h2 {
+  color: white;
+}
+
+.sec02 h2:after {
+  display: none;
+}
+
+.sec02 .text_wrap {
+  background: rgba(255, 255, 255, 0.7);
+  margin-top: 50px;
+  padding: 50px 15px;
+}
+
+.sec02 .text_wrap p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 3;
+}
+
+/* sub03-section-03 */
+.sec03 .cont {
   padding-top: 100px;
 }
 
-.sec02 .img_wrap {
-  padding-top: 100px;
+.sec03 .img_wrap {
+  padding-top: 150px;
   padding-bottom: 150px;
 }
 
-.sec02 .img_wrap img {
+.sec03 .img_wrap img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -116,21 +151,25 @@ h2:after {
   .sec01 .bottom .text_wrap {
     margin-bottom: 40px;
   }
-  .sec02 li {
+  .sec02 .cont {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  .sec03 li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .sec02 .thumbnail {
+  .sec03 .thumbnail {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .sec02 .text_wrap {
+  .sec03 .text_wrap {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-left: 0px;
     margin-top: 30px;
   }
-  .sec02 .text_wrap br {
+  .sec03 .text_wrap br {
     display: none;
   }
 }

@@ -106,7 +106,7 @@
 
 /* section-02,03 */
 .sec01, .sec02 {
-  background: #2489bc;
+  background: #18A8F1;
 }
 
 .sec01 .cont, .sec02 .cont {
@@ -233,7 +233,7 @@
 }
 
 .sec03 .cont .more {
-  color: #2489bc;
+  color: #18A8F1;
   font-weight: 700;
   font-size: 1.3rem;
 }
@@ -245,7 +245,7 @@
 
 .sec04 h2 {
   padding: 30px 0;
-  color: #2489bc;
+  color: #18A8F1;
   letter-spacing: 2px;
   text-align: center;
 }

@@ -131,10 +131,6 @@ nav li {
   padding: 0 12px;
 }
 
-nav li:first-child a {
-  color: #f2922c;
-}
-
 nav li a {
   display: block;
   color: white;
