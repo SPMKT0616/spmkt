@@ -116,8 +116,6 @@ h2:after {
 }
 
 .sec02 .text_wrap p {
-  font-size: 1.3rem;
-  font-weight: 400;
   line-height: 3;
 }
 
@@ -155,22 +153,9 @@ h2:after {
     padding: 80px 20px;
     text-align: center;
   }
-  .sec03 li {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .sec03 .thumbnail {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .sec03 .text_wrap {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-  .sec03 .text_wrap br {
-    display: none;
+  .sec03 .img_wrap {
+    padding-top: 80px;
+    padding-bottom: 120px;
   }
 }
 /*# sourceMappingURL=sub3.css.map */
