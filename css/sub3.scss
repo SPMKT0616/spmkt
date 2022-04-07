@@ -110,7 +110,10 @@ h2{
         background: rgba(255,255,255,0.7);
         margin-top: 50px;
         padding: 50px 15px;
-        p{ line-height: 3;}
+        p{ 
+            font-weight: 600;
+            line-height: 3;
+        }
     }
 }
 

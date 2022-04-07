@@ -116,6 +116,7 @@ h2:after {
 }
 
 .sec02 .text_wrap p {
+  font-weight: 600;
   line-height: 3;
 }
 
