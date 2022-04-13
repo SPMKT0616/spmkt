@@ -46,14 +46,14 @@ main > *{ width: 100%;}
 
 main .cont{ max-width: 1200px;}
 
-section{ overflow-x: hidden;}
+section{ overflow: hidden;}
 
 .cont{ @include cont;}
 
 .wrapper:after{ @include clearfix;}
 
 .screen{
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.2);
     @include abs0; 
 }
 
@@ -74,14 +74,13 @@ h2{
 
 p{
     color: #404040;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.2rem;
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.7; 
-    strong{
-            color: #404040;
-            font-weight: 400; font-size: 1.4rem;
-    }
+}
+strong{
+    font-size: 1.4rem;
 }
 
 /* header */
@@ -126,7 +125,7 @@ nav{
             line-height: 65px;
             letter-spacing: 1px;
             text-align: center;
-            &:hover{ color: $maincolor;}
+            &:hover{ color: #26BCB8;}
         }
     }
 }
@@ -137,7 +136,7 @@ nav{
     @include headertrans;
     li a{
         color: white;
-        &:hover{ color: $maincolor;}
+        &:hover{ color: #26BCB8;}
     }
 }
 
@@ -145,25 +144,27 @@ nav{
 footer{
     width: 100%;
     background: $subcolor2;
-    // min-width: 1200px;
-    text-align: center;
     .cont{
         position: relative;
         max-width: 1200px;
         padding-top:30px;
         padding-bottom: 30px;
-        >p{padding-bottom: 25px;}
+        &:after{ @include clearfix;}
     }
-    address{
-        p{ margin-bottom: 10px;}
-    }
-    p{ color: white;}
-    .instagram{
-        position: absolute;
-        top: 30px;
-        right: 0;
+    p, address{ 
         color: white;
-        font-size: 3.5rem;
+        font-size: 0.9rem;
+    }
+    address{ margin-top: 20px;}
+    .sns{
+        float: right;
+        li{float: left;}
+        &:after{ @include clearfix;}
+    }
+    .instagram, .naver{
+
+        color: white;
+        font-size: 3.2rem;
     }
 }
 

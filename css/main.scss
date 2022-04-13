@@ -12,7 +12,6 @@ $contwidth: 1200px;
 }
 @mixin cont{
     width: $contwidth;
-    // min-width: $contwidth;
     padding-right: 20px;
     padding-left: 20px;
     margin: 0 auto;
@@ -32,6 +31,20 @@ $contwidth: 1200px;
     display: block;
     position: absolute;
     content: "";
+}
+
+.more{
+    padding: 5px 15px;
+    border-radius: 20px;
+    background: $subcolor2;
+    color: white;
+    &:hover{
+        background: white;
+        color: black;
+    }
+    span{
+        font-weight: 300;
+    }
 }
 
 /* quick-menu(후원 및 문의) */
@@ -100,8 +113,6 @@ $contwidth: 1200px;
     }
 }
 
-.main_top .screen{ background: rgba(0,0,0,0.4);}
-
 .main_top .sl_01{ 
     background: url(../img/jpg/main_slide_bg/bg_01.jpg) no-repeat center;
     background-size: cover;
@@ -120,8 +131,8 @@ $contwidth: 1200px;
 }
 
 
-/* section-02,03 */
-.sec01, .sec02{
+/* section-01,03 */
+.sec01, .sec03, .sec04{
     background: $maincolor;
     .cont{
         display: flex;
@@ -131,6 +142,7 @@ $contwidth: 1200px;
         >div{
             position: relative;
             float: left;
+            color: white;
         }
     }
     h2{
@@ -144,24 +156,56 @@ $contwidth: 1200px;
         }
     }
     h2, p, strong{ color: white;}
+    h3{ text-align: center;}
     strong{
         display: block;
         padding-bottom: 10px;
+        font-size: 1.1rem;
     }
-    .more{
+    .more{ 
         position: absolute;
         right: 0;
         bottom: -40px;
-        padding: 5px 15px;
-        border-radius: 20px;
-        background: $subcolor2;
+    }
+}
+
+/* section-02 */
+.sec02{
+    background: $maincolor;
+    overflow: hidden;
+    h3{ 
+        padding: 30px 0;
+        text-align: center;
+        span{color: #ffe224}
+    }
+    p{
+        text-align: center;
         color: white;
-        &:hover{
-            background: white;
-            color: black;
+        font-size: 1rem;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0;
+        p{ 
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 1.3rem;
         }
-        span{
-            font-weight: 300;
+    }
+    li{ width: 30%;}
+    .thumbnail{
+        display: block;
+        width: 100%;
+        height: 240px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            &:hover{
+                transform: scale(1.1);
+                transition: all 0.3s;
+            }
         }
     }
 }
@@ -180,12 +224,13 @@ $contwidth: 1200px;
 
 /* explanation */
 .explanation{
-    .cont{
+    background: $maincolor ;
+    ul{
         display: flex;
         justify-content: space-between;
-        @include contpadding;    
-        > div{ width: 30%;}
+        padding-bottom: 60px;     
     }
+    li{ width: 30%;}
     .thumbnail{
         width: 100%;
         height: 200px;
@@ -196,19 +241,22 @@ $contwidth: 1200px;
             padding-top: 20px;
             font-size: 1.2rem;
         }
-        p{ padding: 20px 0;}       
+        p{ 
+            padding: 20px 0;
+            color: white;
+        }       
     }
 }
 
 /* section-04 */
-.sec03{
+.sec05{
     *{text-align: center;}
     .cont{
         padding-top: 50px;
         padding-bottom: 150px;
         h2{ padding: 50px 0;}
         p{ margin-bottom: 30px;}
-        .more{
+        .more2{
             color: $maincolor;
             font-weight: 700; 
             font-size: 1.3rem;
@@ -216,8 +264,7 @@ $contwidth: 1200px;
     }
 }
 
-/* section-05 */
-.sec04{
+.sec05{
     background: white;
     h2{
         padding: 30px 0; 
@@ -250,20 +297,20 @@ $contwidth: 1200px;
 
 /* Media Query */
 @media screen and (max-width: 960px){
-    .sec01{
+    .sec01, .sec04{
         .cont{ flex-wrap: wrap-reverse;}
         .right{ margin-bottom: 20px;}
     }
-    .sec02{
+    .sec03{
         .cont{ flex-wrap: wrap;}
         .left{ margin-bottom: 20px;}
     }
-    .explanation{
-        .cont{
+    .sec02, .explanation{
+        ul{
             flex-wrap: wrap;
             padding-top: 70px !important;
             padding-bottom: 70px !important;
-            > div{
+            > li{
                 width: 100%;
                 padding-bottom: 30px;
             }

@@ -21,7 +21,7 @@ main .cont {
 }
 
 section {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .cont {
@@ -38,7 +38,7 @@ section {
 }
 
 .screen {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 0;
   right: 0;
@@ -65,15 +65,13 @@ h2 {
 
 p {
   color: #404040;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.2rem;
   font-family: 'Noto Sans KR', sans-serif;
   line-height: 1.7;
 }
 
-p strong {
-  color: #404040;
-  font-weight: 400;
+strong {
   font-size: 1.4rem;
 }
 
@@ -142,7 +140,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #2489bc;
+  color: #26BCB8;
 }
 
 /* scroll down시 header */
@@ -159,14 +157,13 @@ nav li a:hover {
 }
 
 .down li a:hover {
-  color: #2489bc;
+  color: #26BCB8;
 }
 
 /* footer */
 footer {
   width: 100%;
   background: #333333;
-  text-align: center;
 }
 
 footer .cont {
@@ -176,24 +173,38 @@ footer .cont {
   padding-bottom: 30px;
 }
 
-footer .cont > p {
-  padding-bottom: 25px;
+footer .cont:after {
+  display: block;
+  clear: both;
+  content: '';
 }
 
-footer address p {
-  margin-bottom: 10px;
-}
-
-footer p {
+footer p, footer address {
   color: white;
+  font-size: 0.9rem;
 }
 
-footer .instagram {
-  position: absolute;
-  top: 30px;
-  right: 0;
+footer address {
+  margin-top: 20px;
+}
+
+footer .sns {
+  float: right;
+}
+
+footer .sns li {
+  float: left;
+}
+
+footer .sns:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+footer .instagram, footer .naver {
   color: white;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
 }
 
 /* heading background */
