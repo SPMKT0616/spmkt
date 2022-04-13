@@ -158,7 +158,10 @@ footer{
     address{ margin-top: 20px;}
     .sns{
         float: right;
-        li{float: left;}
+        li{
+            float: left;
+            margin-right: 10px;
+        }
         &:after{ @include clearfix;}
     }
     .instagram, .naver{

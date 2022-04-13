@@ -194,6 +194,7 @@ footer .sns {
 
 footer .sns li {
   float: left;
+  margin-right: 10px;
 }
 
 footer .sns:after {
