@@ -1,5 +1,5 @@
 $maincolor: #18A8F1;
-$subcolor1: #f2922c; 
+$subcolor1: #b7c6cd; 
 $subcolor2: #333333;
 $contwidth: 1200px;
 
@@ -42,9 +42,7 @@ $contwidth: 1200px;
         background: white;
         color: black;
     }
-    span{
-        font-weight: 300;
-    }
+    span{ font-weight: 300;}
 }
 
 /* quick-menu(후원 및 문의) */
@@ -53,7 +51,7 @@ $contwidth: 1200px;
     z-index: 100;
     right: 40px;
     bottom: 150px;
-    background: #e87d17;
+    background: $subcolor1;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     a{ 
         display: block;

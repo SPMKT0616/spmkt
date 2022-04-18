@@ -1,5 +1,5 @@
 $maincolor: #2489bc;
-$subcolor1: #f2922c;
+$subcolor1: #b7c6cd;
 $subcolor2: #333333;
 $contwidth: 1200px;
 
@@ -144,7 +144,7 @@ nav{
 /* footer */
 footer{
     width: 100%;
-    background: $subcolor2;
+    background: #ebebeb;
     .cont{
         position: relative;
         max-width: 1200px;
@@ -153,7 +153,6 @@ footer{
         &:after{ @include clearfix;}
     }
     p, address{ 
-        color: white;
         font-size: 0.9rem;
     }
     address{ margin-top: 20px;}
@@ -166,8 +165,6 @@ footer{
         &:after{ @include clearfix;}
     }
     .instagram, .naver{
-
-        color: white;
         font-size: 3.2rem;
     }
 }

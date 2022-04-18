@@ -164,7 +164,7 @@ nav li a:hover {
 /* footer */
 footer {
   width: 100%;
-  background: #333333;
+  background: #ebebeb;
 }
 
 footer .cont {
@@ -181,7 +181,6 @@ footer .cont:after {
 }
 
 footer p, footer address {
-  color: white;
   font-size: 0.9rem;
 }
 
@@ -205,7 +204,6 @@ footer .sns:after {
 }
 
 footer .instagram, footer .naver {
-  color: white;
   font-size: 3.2rem;
 }
 
